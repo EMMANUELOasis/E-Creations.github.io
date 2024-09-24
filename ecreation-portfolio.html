@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - E-Creations</title>
+   <link rel="stylesheet" href="file:///C:/Users/EMMA/Desktop/my%20code/ECREATIONS/style-home.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="ecreation-home.html"><h1>E-Creations</h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="ecreation-home.html">Home</a></li>
+                <li><a href="ecreation-portfolio.html">Portfolio</a></li>
+                <li><a href="ecreation-about.html">About</a></li>
+                <li><a href="ecreation-contact.html">Contact</a></li>
+				<li><a href="ecreation-services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section id="portfolio" class="portfolio-section">
+    <h2>Our Projects</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="project1-thumbnail.jpg" alt="Project 1" class="portfolio-thumb" onclick="openModal('modal1')">
+            <p>Project 1 - Website Development</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2-thumbnail.jpg" alt="Project 2" class="portfolio-thumb" onclick="openModal('modal2')">
+            <p>Project 2 - Logo Design</p>
+        </div>
+        <!-- Add more projects similarly -->
+    </div>
+</section>
+
+<!-- Modal for Project 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h3>Project 1 - Website Development</h3>
+        <p>Details about this project...</p>
+        <img src="project1-full.jpg" alt="Project 1 Full Image">
+    </div>
+</div>
+<!-- Modal for Project 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h3>Project 2 - Logo Design</h3>
+        <p>Details about this project...</p>
+        <img src="project2-full.jpg" alt="Project 2 Full Image">
+    </div>
+</div>
+
+		
+    </section>
+
+   <footer>
+    <p>Follow us on:</p>
+    <ul class="social-links">
+        <ul><a href="https://instagram.com/yourprofile">Instagram</a></ul>
+        <ul><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></ul>
+        <ul><a href="https://github.com/yourprofile">Facebook</a></ul>
+    </ul>
+	 <ul><a href="https://github.com/yourprofile">GitHub</a></ul>
+    </ul>
+    <p>&copy; 2024 E-Creations. All rights reserved.</p>
+</footer>
+</body>
+</html>
